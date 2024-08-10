@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune's Parks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+    <label for="sidebar-toggle" class="sidebar-icon">&#9776; Menu</label>
+    <div id="sidebar" class="sidebar">
+        <h2>Pune's Parks</h2>
+        <ul>
+            <li><a href="#about" onclick="document.getElementById('sidebar-toggle').checked = false;">About</a></li>
+            <li><a href="#parks" onclick="document.getElementById('sidebar-toggle').checked = false;">Parks</a></li>
+            <li><a href="#activities" onclick="document.getElementById('sidebar-toggle').checked = false;">Activities</a></li>
+            <li><a href="#contact" onclick="document.getElementById('sidebar-toggle').checked = false;">Contact</a></li>
+        </ul>
+    </div>
+    <div id="main-content" class="content">
+        <header>
+            <h1>Welcome to Pune's Parks</h1>
+        </header>
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>Pune is home to a variety of beautiful parks that offer a serene environment for relaxation, recreation, and connecting with nature.</p>
+        </section>
+        <section id="parks" class="section">
+            <h2>Our Parks</h2>
+            <div class="park-grid">
+                <div class="park-card">
+                    <h3>Saras Baug</h3>
+                    <p>A historic garden known for its lush greenery and tranquil atmosphere.</p>
+                </div>
+                <div class="park-card">
+                    <h3>Osho Teerth Park</h3>
+                    <p>An oasis of peace in the city, ideal for meditation and quiet walks.</p>
+                </div>
+                <div class="park-card">
+                    <h3>Peshwe Park</h3>
+                    <p>A popular destination for families, featuring a zoo and amusement rides.</p>
+                </div>
+            </div>
+        </section>
+        <section id="activities" class="section">
+            <h2>Activities</h2>
+            <ul>
+                <li>Jogging and Walking</li>
+                <li>Yoga and Meditation</li>
+                <li>Picnics and Family Outings</li>
+                <li>Bird Watching</li>
+                <li>Playgrounds for Kids</li>
+            </ul>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Pune's Parks. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
